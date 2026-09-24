@@ -92,6 +92,8 @@
   --accent-hover:#d4b03a;
   --success:#059669;
   --success-hover:#10b981;
+  --danger:#dc2626;
+  --danger-light:#fecaca;
   --bg:#0a1628;
   --surface:rgba(255,255,255,0.08);
   --text:#f1f5f9;
@@ -159,7 +161,6 @@ a:hover{color:var(--accent-hover)}
 .icon{display:inline-block;width:18px;height:18px;vertical-align:-3px;flex-shrink:0}
 .icon-sm{width:16px;height:16px;vertical-align:-2px;flex-shrink:0}
 
-
 .site-header{
   background:linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);
   backdrop-filter:blur(30px) saturate(200%) brightness(1.15);
@@ -173,7 +174,6 @@ a:hover{color:var(--accent-hover)}
   box-shadow:0 4px 24px rgba(0,0,0,0.2), inset 0 -1px 0 rgba(255,255,255,0.08);
   transition:z-index 0.3s;
 }
-
 body.menu-open .site-header{z-index:1001}
 .header-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
 .site-logo{font-size:1.2rem;font-weight:700;letter-spacing:-0.5px;color:#fff;display:flex;align-items:center;gap:10px;flex-shrink:0;cursor:pointer}
@@ -208,7 +208,6 @@ body.menu-open .site-header{z-index:1001}
 .nav-video{color:var(--accent)!important;font-weight:600;display:inline-flex;align-items:center;gap:6px}
 .nav-video:hover{color:var(--accent-hover)!important}
 
-
 .menu-toggle{
   display:none;
   background:rgba(255,255,255,0.08);
@@ -229,7 +228,6 @@ body.menu-open .site-header{z-index:1001}
   position:relative;
   z-index:1002;
   box-shadow:0 4px 12px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.15);
-  transition:background 0.2s;
 }
 .menu-toggle:active{background:rgba(255,255,255,0.2)}
 .menu-toggle svg{pointer-events:none;transition:transform 0.3s ease}
@@ -249,7 +247,6 @@ body.menu-open .site-header{z-index:1001}
   pointer-events:none;
 }
 body.menu-open .mobile-overlay{opacity:1;visibility:visible;pointer-events:auto}
-
 
 .mobile-menu{
   position:fixed;
@@ -292,29 +289,13 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
   -webkit-tap-highlight-color:transparent;
   touch-action:manipulation;
   flex-shrink:0;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);
 }
 .mobile-menu-close:active{background:rgba(255,255,255,0.2)}
 
 .mobile-nav-list{list-style:none;padding:0;margin:0}
 .mobile-nav-list li{border-bottom:1px solid rgba(255,255,255,0.06)}
 .mobile-nav-list li:last-child{border-bottom:none}
-.mobile-nav-list a{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:16px 4px;
-  color:var(--text);
-  font-size:1rem;
-  font-weight:500;
-  -webkit-tap-highlight-color:transparent;
-  touch-action:manipulation;
-  min-height:52px;
-  width:100%;
-  cursor:pointer;
-  transition:all 0.2s;
-  text-decoration:none;
-}
+.mobile-nav-list a{display:flex;align-items:center;gap:12px;padding:16px 4px;color:var(--text);font-size:1rem;font-weight:500;-webkit-tap-highlight-color:transparent;touch-action:manipulation;min-height:52px;width:100%;cursor:pointer;transition:all 0.2s}
 .mobile-nav-list a:hover{color:#fff;background:rgba(255,255,255,0.05);border-radius:8px}
 .mobile-nav-list a:active{color:var(--accent)}
 .mobile-nav-list a svg{flex-shrink:0;color:var(--muted)}
@@ -337,7 +318,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 .mobile-menu-contact-title{font-size:0.78rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:600;margin-bottom:12px}
 .mobile-menu-contact a{display:flex;align-items:center;gap:10px;padding:10px 0;color:var(--text-soft);font-size:0.95rem;font-weight:500;-webkit-tap-highlight-color:transparent}
 
-/* ===== BREADCRUMB ===== */
 .breadcrumb{
   background:rgba(255,255,255,0.04);
   backdrop-filter:blur(20px);
@@ -395,8 +375,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
   font-weight:500;
   margin-bottom:20px;
   box-shadow:0 4px 20px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3);
-  position:relative;
-  overflow:hidden;
 }
 .hero h1{font-size:clamp(1.85rem,4.5vw,2.85rem);font-weight:700;line-height:1.15;margin-bottom:14px;letter-spacing:-0.8px;text-shadow:0 2px 20px rgba(0,0,0,0.3)}
 .hero-location{font-size:1.05rem;opacity:0.95;margin-bottom:18px;font-weight:500;display:flex;align-items:center;gap:8px}
@@ -449,7 +427,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
 
-
 .btn{
   display:inline-flex;
   align-items:center;
@@ -477,7 +454,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 .btn-outline:hover{background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.5);transform:translateY(-1px)}
 .btn-ghost{background:linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#fff;border:1px solid rgba(255,255,255,0.2);box-shadow:0 4px 16px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.15)}
 .btn-ghost:hover{background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.35);transform:translateY(-1px)}
-
 
 section{padding:64px 0;position:relative;z-index:1}
 section.alt{background:transparent}
@@ -583,17 +559,179 @@ section.alt{background:transparent}
 .contact-section .subtitle{opacity:0.95;margin-bottom:32px;font-size:1.05rem;position:relative}
 .contact-buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:32px;position:relative}
 
-.form-container{background:linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);backdrop-filter:blur(30px) saturate(200%);-webkit-backdrop-filter:blur(30px) saturate(200%);padding:40px;border-radius:var(--radius-lg);box-shadow:0 12px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.2);max-width:640px;margin:0 auto;border:1px solid rgba(255,255,255,0.18)}
-.form-group{margin-bottom:20px}
+/* ===== ENHANCED FORM STYLES ===== */
+.form-container{
+  background:linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  backdrop-filter:blur(30px) saturate(200%);
+  -webkit-backdrop-filter:blur(30px) saturate(200%);
+  padding:40px;
+  border-radius:var(--radius-lg);
+  box-shadow:0 12px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+  max-width:640px;
+  margin:0 auto;
+  border:1px solid rgba(255,255,255,0.18);
+  position:relative;
+  overflow:hidden;
+}
+.form-group{margin-bottom:20px;position:relative}
 .form-group label{display:block;font-weight:600;margin-bottom:8px;color:#fff;font-size:0.9rem}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1.5px solid rgba(255,255,255,0.15);border-radius:var(--radius-sm);font-size:1rem;font-family:inherit;background:rgba(255,255,255,0.06);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--text);-webkit-appearance:none;appearance:none;transition:all 0.2s}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(201,162,39,0.2);background:rgba(255,255,255,0.1)}
-.form-group input::placeholder,.form-group textarea::placeholder{color:var(--muted)}
+.form-group label .required{color:var(--accent);margin-left:2px}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:12px 16px;
+  border:1.5px solid rgba(255,255,255,0.15);
+  border-radius:var(--radius-sm);
+  font-size:1rem;
+  font-family:inherit;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  color:var(--text);
+  -webkit-appearance:none;
+  appearance:none;
+  transition:all 0.2s;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.form-group select{
+  background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%2394a3b8' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
+  background-repeat:no-repeat;
+  background-position:right 16px center;
+  padding-right:40px;
+}
+/* Fix date input color on iOS/Android */
+.form-group input[type="date"]{
+  color:var(--text);
+  color-scheme:dark;
+}
+.form-group input[type="date"]::-webkit-calendar-picker-indicator{
+  filter:invert(1) brightness(0.8);
+  cursor:pointer;
+  opacity:0.7;
+}
+.form-group input[type="date"]::-webkit-datetime-edit{
+  color:var(--text);
+}
+.form-group input[type="date"]::-webkit-datetime-edit-fields-wrapper{
+  color:var(--text);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(201,162,39,0.2), inset 0 1px 0 rgba(255,255,255,0.1);
+  background:rgba(255,255,255,0.1);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{color:var(--muted)}
 .form-group textarea{resize:vertical;min-height:110px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.form-submit{width:100%;padding:14px;background:linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);color:#fff;border:none;border-radius:var(--radius-sm);font-size:1rem;font-weight:600;cursor:pointer;box-shadow:0 6px 24px rgba(201,162,39,0.4), inset 0 1px 0 rgba(255,255,255,0.3);border:1px solid rgba(255,255,255,0.2);transition:all 0.2s}
+
+/* Form Error States */
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea{
+  border-color:var(--danger);
+  box-shadow:0 0 0 3px rgba(220,38,38,0.15);
+}
+.form-error{
+  display:none;
+  color:#fca5a5;
+  font-size:0.82rem;
+  margin-top:6px;
+  padding-left:4px;
+  font-weight:500;
+}
+.form-group.has-error .form-error{display:block}
+
+/* Phone Input Wrapper */
+.phone-input-wrapper{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.phone-input-wrapper .phone-prefix{
+  position:absolute;
+  left:16px;
+  color:var(--text-soft);
+  font-size:0.95rem;
+  font-weight:500;
+  pointer-events:none;
+  z-index:1;
+}
+.phone-input-wrapper input{
+  padding-left:52px;
+  letter-spacing:0.5px;
+}
+.phone-counter{
+  position:absolute;
+  right:16px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:0.75rem;
+  color:var(--muted);
+  pointer-events:none;
+  font-weight:500;
+  transition:color 0.2s;
+}
+.phone-counter.valid{color:var(--success)}
+.phone-counter.invalid{color:var(--danger)}
+
+.form-submit{
+  width:100%;
+  padding:14px;
+  background:linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  color:#fff;
+  border:none;
+  border-radius:var(--radius-sm);
+  font-size:1rem;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 6px 24px rgba(201,162,39,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+  border:1px solid rgba(255,255,255,0.2);
+  transition:all 0.2s;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+.form-submit::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:50%;
+  background:linear-gradient(180deg, rgba(255,255,255,0.2), transparent);
+  pointer-events:none;
+}
 .form-submit:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(201,162,39,0.5)}
-.form-success{display:none;background:rgba(5,150,105,0.2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#a7f3d0;padding:16px;border-radius:var(--radius-sm);margin-top:16px;text-align:center;font-weight:500;border:1px solid rgba(5,150,105,0.3)}
+.form-submit:active{transform:translateY(0)}
+.form-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none}
+
+.form-success{
+  display:none;
+  background:linear-gradient(135deg, rgba(5,150,105,0.2) 0%, rgba(16,185,129,0.15) 100%);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  color:#a7f3d0;
+  padding:20px;
+  border-radius:var(--radius);
+  margin-top:16px;
+  text-align:center;
+  font-weight:500;
+  border:1px solid rgba(5,150,105,0.4);
+  box-shadow:0 4px 16px rgba(5,150,105,0.2);
+  animation:slideIn 0.3s ease;
+}
+.form-success strong{color:#fff;display:block;margin-bottom:6px;font-size:1.05rem}
+.form-success .redirect-note{font-size:0.85rem;opacity:0.85;margin-top:8px;color:#6ee7b7}
+@keyframes slideIn{
+  from{opacity:0;transform:translateY(-10px)}
+  to{opacity:1;transform:translateY(0)}
+}
 
 .transparency{background:linear-gradient(135deg, rgba(201,162,39,0.1) 0%, rgba(201,162,39,0.05) 100%);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,162,39,0.25);border-left:4px solid var(--accent);padding:28px 32px;border-radius:var(--radius);margin-top:24px;box-shadow:0 8px 24px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)}
 .transparency h3{color:var(--accent);margin-bottom:12px;font-size:1.1rem;font-weight:700}
@@ -617,7 +755,6 @@ section.alt{background:transparent}
 
 .mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:linear-gradient(180deg, rgba(15,36,64,0.85) 0%, rgba(10,22,40,0.95) 100%);backdrop-filter:blur(30px) saturate(200%);-webkit-backdrop-filter:blur(30px) saturate(200%);padding:12px 16px;padding-bottom:calc(12px + var(--safe-bottom));box-shadow:0 -8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.15);z-index:40;gap:10px;border-top:1px solid rgba(255,255,255,0.15)}
 .mobile-sticky-cta .btn{flex:1;padding:12px;font-size:0.88rem}
-
 
 @media (max-width:900px){
   .nav-links{display:none}
@@ -1115,54 +1252,73 @@ section.alt{background:transparent}
   </div>
 </section>
 
+<!-- ===== ENHANCED ENQUIRY FORM WITH WHATSAPP REDIRECT ===== -->
 <section id="enquiry">
   <div class="container">
     <div style="text-align:center;max-width:640px;margin:0 auto 32px">
       <span class="section-eyebrow">Enquiry</span>
       <h2 class="section-title">Send an Enquiry</h2>
-      <p class="section-subtitle">Share your details and the owner will get back to you.</p>
+      <p class="section-subtitle">Fill in your details. After submitting, you will be redirected to WhatsApp to send your enquiry directly to the owner.</p>
     </div>
     <div class="form-container">
-      <form id="enquiryForm" onsubmit="return submitForm(event)">
-        <div class="form-group">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required autocomplete="name">
+      <form id="enquiryForm" novalidate>
+        <div class="form-group" id="nameGroup">
+          <label for="name">Full Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Enter your full name" maxlength="60">
+          <div class="form-error" id="nameError">Please enter your full name.</div>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="phone">Phone Number *</label>
-            <input type="tel" id="phone" name="phone" required pattern="[0-9+\s]{10,}" autocomplete="tel">
+
+        <div class="form-group" id="phoneGroup">
+          <label for="phone">Phone Number <span class="required">*</span></label>
+          <div class="phone-input-wrapper">
+            <span class="phone-prefix">+91</span>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="10-digit mobile number" inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}">
+            <span class="phone-counter" id="phoneCounter">0/10</span>
           </div>
-          <div class="form-group">
-            <label for="contact-method">Preferred Contact Method</label>
+          <div class="form-error" id="phoneError">Please enter a valid 10-digit Indian mobile number.</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group" id="contactMethodGroup">
+            <label for="contact-method">Preferred Contact</label>
             <select id="contact-method" name="contact-method">
-              <option value="call">Call</option>
-              <option value="whatsapp">WhatsApp</option>
-              <option value="either">Either</option>
+              <option value="Either">Either (Call or WhatsApp)</option>
+              <option value="Call">Phone Call</option>
+              <option value="WhatsApp">WhatsApp</option>
             </select>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
+          <div class="form-group" id="visitDateGroup">
             <label for="visit-date">Preferred Visit Date</label>
             <input type="date" id="visit-date" name="visit-date">
-          </div>
-          <div class="form-group">
-            <label for="visit-time">Preferred Visit Time</label>
-            <select id="visit-time" name="visit-time">
-              <option value="">Any time</option>
-              <option value="morning">Morning (9 AM – 12 PM)</option>
-              <option value="afternoon">Afternoon (12 PM – 4 PM)</option>
-              <option value="evening">Evening (4 PM – 7 PM)</option>
-            </select>
+            <div class="form-error" id="dateError">Please select a future date.</div>
           </div>
         </div>
+
+        <div class="form-group">
+          <label for="visit-time">Preferred Visit Time</label>
+          <select id="visit-time" name="visit-time">
+            <option value="Any time">Any time</option>
+            <option value="Morning (9 AM – 12 PM)">Morning (9 AM – 12 PM)</option>
+            <option value="Afternoon (12 PM – 4 PM)">Afternoon (12 PM – 4 PM)</option>
+            <option value="Evening (4 PM – 7 PM)">Evening (4 PM – 7 PM)</option>
+          </select>
+        </div>
+
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="I am interested in the 2 BHK independent house in Karri Satyavathi Nagar, Tadepalligudem. Please share more details."></textarea>
+          <textarea id="message" name="message" placeholder="I am interested in the 2 BHK independent house in Karri Satyavathi Nagar, Tadepalligudem. Please share more details." maxlength="500"></textarea>
         </div>
-        <button type="submit" class="form-submit">Send Enquiry</button>
-        <div class="form-success" id="formSuccess">Thank you. Your enquiry has been noted. The owner will contact you shortly.</div>
+
+        <button type="submit" class="form-submit" id="submitBtn">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.04 0C5.46 0 .12 5.34.12 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.66a11.9 11.9 0 0 0 5.74 1.46h.01c6.58 0 11.92-5.34 11.93-11.92 0-3.18-1.24-6.17-3.46-8.4z"/></svg>
+          Send Enquiry via WhatsApp
+        </button>
+
+        <div class="form-success" id="formSuccess">
+          <strong>Enquiry Sent Successfully!</strong>
+          <div>Redirecting you to WhatsApp to send your message to the owner...</div>
+          <div class="redirect-note">If WhatsApp doesn't open automatically, <a href="#" id="whatsappManualLink" style="color:#fff;text-decoration:underline;font-weight:600">click here</a>.</div>
+        </div>
       </form>
     </div>
   </div>
@@ -1257,7 +1413,9 @@ section.alt{background:transparent}
 </div>
 
 <script>
-
+/* ============================================
+   MOBILE MENU
+   ============================================ */
 (function(){
   var toggle = document.getElementById('menuToggle');
   var menu = document.getElementById('mobileMenu');
@@ -1276,7 +1434,6 @@ section.alt{background:transparent}
     overlay.setAttribute('aria-hidden','false');
     toggle.setAttribute('aria-expanded','true');
     toggle.setAttribute('aria-label','Close menu');
-    
     setTimeout(function(){
       var first = menu.querySelector('.mobile-nav-list a');
       if(first) first.focus();
@@ -1294,7 +1451,6 @@ section.alt{background:transparent}
     toggle.setAttribute('aria-label','Open menu');
   }
 
- 
   toggle.addEventListener('click', function(e){
     e.preventDefault();
     e.stopPropagation();
@@ -1302,20 +1458,17 @@ section.alt{background:transparent}
     else openMenu();
   });
 
- 
   closeBtn.addEventListener('click', function(e){
     e.preventDefault();
     closeMenu();
     toggle.focus();
   });
 
-
   overlay.addEventListener('click', function(e){
     e.preventDefault();
     closeMenu();
   });
 
-  
   logoLink.addEventListener('click', function(e){
     e.preventDefault();
     window.scrollTo({top: 0, behavior: 'smooth'});
@@ -1326,11 +1479,7 @@ section.alt{background:transparent}
     navLinks[i].addEventListener('click', function(e){
       e.preventDefault();
       var targetHref = this.getAttribute('href');
-      
-    
       closeMenu();
-      
-      
       setTimeout(function(){
         var target = document.querySelector(targetHref);
         if(target){
@@ -1341,7 +1490,6 @@ section.alt{background:transparent}
       }, 380);
     });
   }
-
 
   var scrollTopLinks = menu.querySelectorAll('.js-scroll-top-link');
   for(var j = 0; j < scrollTopLinks.length; j++){
@@ -1354,7 +1502,6 @@ section.alt{background:transparent}
     });
   }
 
- 
   var desktopScrollTop = document.querySelectorAll('.nav-links .js-scroll-top, .breadcrumb .js-scroll-top');
   for(var k = 0; k < desktopScrollTop.length; k++){
     desktopScrollTop[k].addEventListener('click', function(e){
@@ -1363,7 +1510,6 @@ section.alt{background:transparent}
     });
   }
 
-
   var externalLinks = menu.querySelectorAll('.js-external-link');
   for(var l = 0; l < externalLinks.length; l++){
     externalLinks[l].addEventListener('click', function(){
@@ -1371,14 +1517,12 @@ section.alt{background:transparent}
     });
   }
 
- 
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && isOpen){
       closeMenu();
       toggle.focus();
     }
   });
-
 
   var resizeTimer;
   window.addEventListener('resize', function(){
@@ -1390,13 +1534,14 @@ section.alt{background:transparent}
     }, 150);
   });
 
-
   menu.addEventListener('touchmove', function(e){
     e.stopPropagation();
   }, {passive: true});
 })();
 
-
+/* ============================================
+   FAQ ACCORDION
+   ============================================ */
 document.querySelectorAll('.faq-question').forEach(function(btn){
   btn.addEventListener('click',function(){
     var item=this.parentElement;
@@ -1412,7 +1557,9 @@ document.querySelectorAll('.faq-question').forEach(function(btn){
   });
 });
 
-
+/* ============================================
+   LIGHTBOX
+   ============================================ */
 var galleryImages=[
   {src:'https://image.qwenlm.ai/public_source/b21e87a8-e19e-454b-8b8d-53b9565b7fdf/1471b91fe-913d-4a53-9a59-d3bed337c366.png',alt:'Front elevation of 2 BHK independent house in Karri Satyavathi Nagar, Tadepalligudem'},
   {src:'https://image.qwenlm.ai/public_source/b21e87a8-e19e-454b-8b8d-53b9565b7fdf/155bdc073-599e-457b-b938-2e3bd1b87510.png',alt:'Living area of 2 BHK independent house in Tadepalligudem'},
@@ -1450,16 +1597,217 @@ document.addEventListener('keydown',function(e){
   if(e.key==='ArrowRight')changeLightbox(1);
 });
 
+/* ============================================
+   ENHANCED FORM WITH VALIDATION + WHATSAPP REDIRECT
+   ============================================ */
+(function(){
+  var form = document.getElementById('enquiryForm');
+  var nameInput = document.getElementById('name');
+  var phoneInput = document.getElementById('phone');
+  var dateInput = document.getElementById('visit-date');
+  var contactMethod = document.getElementById('contact-method');
+  var visitTime = document.getElementById('visit-time');
+  var messageInput = document.getElementById('message');
+  var submitBtn = document.getElementById('submitBtn');
+  var successBox = document.getElementById('formSuccess');
+  var manualLink = document.getElementById('whatsappManualLink');
+  var phoneCounter = document.getElementById('phoneCounter');
 
-function submitForm(e){
-  e.preventDefault();
-  var form=document.getElementById('enquiryForm');
-  var success=document.getElementById('formSuccess');
-  success.style.display='block';
-  form.reset();
-  setTimeout(function(){success.style.display='none'},6000);
-  return false;
-}
+  var OWNER_PHONE = '919014663217'; // WhatsApp number with country code
+
+  // Set minimum date to today (prevent past dates)
+  function setMinDate(){
+    var today = new Date();
+    var yyyy = today.getFullYear();
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var dd = String(today.getDate()).padStart(2, '0');
+    var minDate = yyyy + '-' + mm + '-' + dd;
+    dateInput.setAttribute('min', minDate);
+  }
+  setMinDate();
+
+  // Phone input: allow only digits, show counter
+  phoneInput.addEventListener('input', function(e){
+    // Remove non-digit characters
+    var value = this.value.replace(/\D/g, '');
+    // Limit to 10 digits
+    if(value.length > 10){
+      value = value.substring(0, 10);
+    }
+    this.value = value;
+
+    // Update counter
+    phoneCounter.textContent = value.length + '/10';
+    phoneCounter.classList.remove('valid', 'invalid');
+    if(value.length === 10){
+      // Validate Indian mobile (starts with 6-9)
+      if(/^[6-9]/.test(value)){
+        phoneCounter.classList.add('valid');
+      } else {
+        phoneCounter.classList.add('invalid');
+      }
+    } else if(value.length > 0){
+      phoneCounter.classList.add('invalid');
+    }
+
+    // Clear error on input
+    document.getElementById('phoneGroup').classList.remove('has-error');
+  });
+
+  // Name input: clear error on input
+  nameInput.addEventListener('input', function(){
+    document.getElementById('nameGroup').classList.remove('has-error');
+  });
+
+  // Date input: validate on change
+  dateInput.addEventListener('change', function(){
+    document.getElementById('visitDateGroup').classList.remove('has-error');
+    var selectedDate = new Date(this.value);
+    var today = new Date();
+    today.setHours(0,0,0,0);
+    if(selectedDate < today){
+      document.getElementById('visitDateGroup').classList.add('has-error');
+      this.value = '';
+    }
+  });
+
+  // Validate form
+  function validateForm(){
+    var isValid = true;
+
+    // Name validation
+    var name = nameInput.value.trim();
+    if(name.length < 2){
+      document.getElementById('nameGroup').classList.add('has-error');
+      isValid = false;
+    } else {
+      document.getElementById('nameGroup').classList.remove('has-error');
+    }
+
+    // Phone validation (Indian mobile: 10 digits, starts with 6-9)
+    var phone = phoneInput.value.trim();
+    if(!/^[6-9][0-9]{9}$/.test(phone)){
+      document.getElementById('phoneGroup').classList.add('has-error');
+      isValid = false;
+    } else {
+      document.getElementById('phoneGroup').classList.remove('has-error');
+    }
+
+    // Date validation (if provided, must be today or future)
+    var visitDate = dateInput.value;
+    if(visitDate){
+      var selectedDate = new Date(visitDate);
+      var today = new Date();
+      today.setHours(0,0,0,0);
+      if(selectedDate < today){
+        document.getElementById('visitDateGroup').classList.add('has-error');
+        isValid = false;
+      } else {
+        document.getElementById('visitDateGroup').classList.remove('has-error');
+      }
+    }
+
+    return isValid;
+  }
+
+  // Build WhatsApp message from form data
+  function buildWhatsAppMessage(){
+    var name = nameInput.value.trim();
+    var phone = phoneInput.value.trim();
+    var method = contactMethod.value;
+    var date = dateInput.value;
+    var time = visitTime.value;
+    var message = messageInput.value.trim();
+
+    // Format date nicely
+    var formattedDate = 'Not specified';
+    if(date){
+      var dateObj = new Date(date);
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      formattedDate = dateObj.toLocaleDateString('en-IN', options);
+    }
+
+    // Build message
+    var waMessage = '';
+    waMessage += '*New Property Enquiry*%0A%0A';
+    waMessage += '*Property:* 2 BHK Independent House%0A';
+    waMessage += '*Location:* Karri Satyavathi Nagar, Tadepalligudem%0A%0A';
+    waMessage += '*Buyer Details:*%0A';
+    waMessage += '• Name: ' + encodeURIComponent(name) + '%0A';
+    waMessage += '• Phone: +91 ' + encodeURIComponent(phone) + '%0A';
+    waMessage += '• Preferred Contact: ' + encodeURIComponent(method) + '%0A';
+    waMessage += '• Visit Date: ' + encodeURIComponent(formattedDate) + '%0A';
+    waMessage += '• Visit Time: ' + encodeURIComponent(time) + '%0A';
+
+    if(message){
+      waMessage += '%0A*Message:*%0A' + encodeURIComponent(message) + '%0A';
+    }
+
+    waMessage += '%0A---%0A';
+    waMessage += 'Sent from: houseforsellaroundme.github.io';
+
+    return waMessage;
+  }
+
+  // Form submission
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(!validateForm()){
+      // Scroll to first error
+      var firstError = form.querySelector('.has-error');
+      if(firstError){
+        firstError.scrollIntoView({behavior: 'smooth', block: 'center'});
+        var errorInput = firstError.querySelector('input, select, textarea');
+        if(errorInput) setTimeout(function(){ errorInput.focus(); }, 400);
+      }
+      return;
+    }
+
+    // Disable submit button
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation:spin 1s linear infinite"><circle cx="12" cy="12" r="10"/></svg> Sending...';
+
+    // Build WhatsApp URL
+    var waMessage = buildWhatsAppMessage();
+    var waUrl = 'https://wa.me/' + OWNER_PHONE + '?text=' + waMessage;
+
+    // Show success message
+    successBox.style.display = 'block';
+    manualLink.href = waUrl;
+    manualLink.target = '_blank';
+    manualLink.rel = 'noopener';
+
+    // Scroll to success message
+    successBox.scrollIntoView({behavior: 'smooth', block: 'center'});
+
+    // Redirect to WhatsApp after short delay
+    setTimeout(function(){
+      // Try to open WhatsApp
+      window.open(waUrl, '_blank');
+
+      // Reset form after redirect
+      setTimeout(function(){
+        form.reset();
+        setMinDate();
+        phoneCounter.textContent = '0/10';
+        phoneCounter.classList.remove('valid', 'invalid');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.04 0C5.46 0 .12 5.34.12 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.66a11.9 11.9 0 0 0 5.74 1.46h.01c6.58 0 11.92-5.34 11.93-11.92 0-3.18-1.24-6.17-3.46-8.4z"/></svg> Send Enquiry via WhatsApp';
+        
+        // Hide success after 8 seconds
+        setTimeout(function(){
+          successBox.style.display = 'none';
+        }, 8000);
+      }, 1000);
+    }, 1500);
+  });
+})();
+
+// Add spin animation for loading state
+var styleSheet = document.createElement('style');
+styleSheet.textContent = '@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}';
+document.head.appendChild(styleSheet);
 </script>
 
 </body>
