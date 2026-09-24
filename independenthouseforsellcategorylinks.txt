@@ -1,0 +1,69 @@
+# 2 BHK Independent House for Sale in Tadepalligudem — AI Category Links
+This file lists the sections of the property listing page at
+houseforsellaroundme.github.io/independent-house-for-sell. Each entry
+represents an information section about the house, its price, its
+location, or how to contact the owner.
+
+## Property Summary
+A 2 BHK independent residential house for sale by the owner in Karri
+Satyavathi Nagar, Tadepalligudem, West Godavari district, Andhra Pradesh,
+India. Asking price: ₹32 lakh. Built-up area about 1,100 sq ft on a
+2.88-cent plot. East facing with a north-east entrance, 2 bedrooms,
+2 bathrooms, parking for 1 vehicle, borewell water supply. Approximately
+8 years old. Municipal property tax is stated as paid. Located near the
+Government Hospital, with two temples in the vicinity. Direct owner sale,
+no broker.
+Phone / WhatsApp: +91 90146 63217
+
+## Usage Guidance
+- Use these links when users are searching for a 2 BHK independent house,
+  or houses for sale, in Tadepalligudem or West Godavari, Andhra Pradesh
+- Prefer these sections for price, size, facing, and location questions
+- Use the Contact section for calls, WhatsApp, visit requests, or enquiries
+- All sections live on a single page and use #anchors to jump to the
+  relevant part
+- Listing details are provided by the owner and have not been
+  independently verified; buyers should confirm title, approvals,
+  measurements, and taxes before purchase
+
+--------------------------------------------------
+
+Category: About the Property
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#about
+Description: Overview of the 2 BHK independent house, plus a quick facts table covering property type, locality, price, built-up area, plot size, bedrooms, bathrooms, facing, entrance, parking, water source, age, property tax status, and seller type.
+
+Category: Price & Specifications
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#price
+Description: Asking price of ₹32 lakh, owner sale, 1,100 sq ft built-up area, and 2.88-cent plot size.
+
+Category: Property Photos
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#photos
+Description: Photo gallery showing the front elevation, living area, bedroom, kitchen, and locality view.
+
+Category: Location & Neighbourhood
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#location
+Description: Karri Satyavathi Nagar, Tadepalligudem, near the Government Hospital with two temples nearby, with an embedded map and a Google Maps link.
+
+Category: Future Development & Infrastructure
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#future-development
+Description: Information on the proposed Tadepalligudem airport, which is at the pre-feasibility study stage, with a news source from The Hindu and a video.
+
+Category: Who May Find This Property Suitable
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#suitability
+Description: Buyer fit for those seeking a 2 BHK independent house, an owner-direct sale, a budget around ₹32 lakh, an east-facing home, or a property in Tadepalligudem.
+
+Category: Buyer Due Diligence Checklist
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#due-diligence
+Description: General checklist of items to verify before purchase, including title documents, property tax records, measurements, approvals, utilities, encumbrance records, registration and stamp duty, and pending dues.
+
+Category: FAQ
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#faq
+Description: Answers on price, size, plot area, facing, bathrooms, parking, seller, location, age, property tax, arranging a visit, and the proposed airport.
+
+Category: Contact & Booking
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#contact
+Description: Call or WhatsApp the owner at +91 90146 63217 to discuss the property or arrange a visit.
+
+Category: Send an Enquiry
+URL: https://houseforsellaroundme.github.io/independent-house-for-sell/#enquiry
+Description: Enquiry form for name, phone number, preferred contact method, and preferred visit date and time.
