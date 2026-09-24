@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Property Listing Page -->
+  <url>
+    <loc>https://houseforsellaroundme.github.io/independent-house-for-sell/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://image.qwenlm.ai/public_source/b21e87a8-e19e-454b-8b8d-53b9565b7fdf/1471b91fe-913d-4a53-9a59-d3bed337c366.png</image:loc>
+      <image:title>Front elevation of 2 BHK independent house in Karri Satyavathi Nagar, Tadepalligudem</image:title>
+      <image:caption>2 BHK independent house for sale in Tadepalligudem - ₹32 Lakh</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://image.qwenlm.ai/public_source/b21e87a8-e19e-454b-8b8d-53b9565b7fdf/155bdc073-599e-457b-b938-2e3bd1b87510.png</image:loc>
+      <image:title>Living area of 2 BHK independent house in Tadepalligudem</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://image.qwenlm.ai/public_source/b21e87a8-e19e-454b-8b8d-53b9565b7fdf/123b583e0-440e-4d02-8d87-0ad21a63beec.png</image:loc>
+      <image:title>Bedroom of 2 BHK independent house in Tadepalligudem</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://image.qwenlm.ai/public_source/b21e87a8-e19e-454b-8b8d-53b9565b7fdf/1c4e2eac9-854e-46e9-bcdb-4f047ed21e13.png</image:loc>
+      <image:title>Kitchen of 2 BHK independent house in Tadepalligudem</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://image.qwenlm.ai/public_source/b21e87a8-e19e-454b-8b8d-53b9565b7fdf/135dfe64d-5ff5-4353-bb9e-0b010d4ed1fe.png</image:loc>
+      <image:title>Locality view of Karri Satyavathi Nagar, Tadepalligudem</image:title>
+    </image:image>
+  </url>
+
+  <!-- Index Page (if exists) -->
+  <url>
+    <loc>https://houseforsellaroundme.github.io/independent-house-for-sell/index.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
