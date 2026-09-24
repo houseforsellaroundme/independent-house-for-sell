@@ -31,8 +31,6 @@ Disallow: /?session=
 
 Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/sitemap.xml
 
-GOOGLE (Main Search + Images + Video)
-
 User-agent: Googlebot
 Allow: /independent-house-for-sell/
 Allow: /*.css
