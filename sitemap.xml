@@ -708,26 +708,11 @@ Each image title includes high-value keywords:
 "for sale"
 "₹32 lakh"
 
-🔄 Updated robots.txt (Add These Lines)
 
-Add to your existing robots.txt:
 
 Updated Sitemap References
 Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/sitemap.xml
 Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/sitemap.rss
 Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/feed.xml
 
-📋 Complete File Checklist
 
-| File | Status | Purpose |
-|---|---|---|
-| index.html | ✅ | Main property page |
-| robots.txt | ✅ | Crawler instructions |
-| sitemap.xml | ✅ UPDATED | 41 URLs + 24 images |
-| sitemap.rss | ✅ | RSS feed |
-| feed.xml | ✅ | Alternative RSS |
-| llms.txt | ✅ | AI summary |
-| llms-full.txt | ✅ | AI complete docs |
-| README.md | ✅ | Documentation |
-
-Your property listing is now fully optimized with 24 indexed images, 7 category pages, and 9 section anchors — maximizing visibility across Google, Bing, AI search engines, and image search results! 🚀
