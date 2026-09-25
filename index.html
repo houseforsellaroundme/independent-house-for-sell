@@ -54,7 +54,7 @@
     {
       "@type": "ImageGallery",
       "name": "Property Photos - 2 BHK Independent House in Tadepalligudem",
-      "description": "Complete photo gallery of the 2 BHK independent house for sale in Karri Satyavathi Nagar, Tadepalligudem. Includes exterior views, main hall, bedrooms, bathrooms, kitchen, and windows with mosquito nets.",
+      "description": "Complete photo gallery of the 2 BHK independent house for sale in Karri Satyavathi Nagar, Tadepalligudem.",
       "numberOfImages": 24
     },
     {
@@ -95,6 +95,7 @@
   --success-hover:#10b981;
   --danger:#dc2626;
   --bg:#0a1628;
+  --surface:rgba(255,255,255,0.08);
   --text:#f1f5f9;
   --text-soft:#cbd5e1;
   --muted:#94a3b8;
@@ -158,7 +159,6 @@ a:hover{color:var(--accent-hover)}
 .icon{display:inline-block;width:18px;height:18px;vertical-align:-3px;flex-shrink:0}
 .icon-sm{width:16px;height:16px;vertical-align:-2px;flex-shrink:0}
 
-/* ===== HEADER ===== */
 .site-header{
   background:linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);
   backdrop-filter:blur(30px) saturate(200%) brightness(1.15);
@@ -188,7 +188,6 @@ body.menu-open .site-header{z-index:1001}
 }
 .site-logo span{color:var(--accent)}
 
-/* ===== DESKTOP NAV WITH DROPDOWN ===== */
 .nav-links{display:flex;gap:28px;align-items:center}
 .nav-links > a,.nav-links > .nav-dropdown > .nav-dropdown-trigger{color:var(--text-soft);font-size:0.92rem;font-weight:500;transition:all 0.2s;display:inline-flex;align-items:center;gap:6px}
 .nav-links > a:hover,.nav-links > .nav-dropdown > .nav-dropdown-trigger:hover{color:#fff;text-shadow:0 0 12px rgba(255,255,255,0.4)}
@@ -266,7 +265,6 @@ body.menu-open .site-header{z-index:1001}
 .nav-video{color:var(--accent)!important;font-weight:600;display:inline-flex;align-items:center;gap:6px}
 .nav-video:hover{color:var(--accent-hover)!important}
 
-/* ===== HAMBURGER ===== */
 .menu-toggle{
   display:none;
   background:rgba(255,255,255,0.08);
@@ -290,7 +288,6 @@ body.menu-open .site-header{z-index:1001}
 .menu-toggle svg{pointer-events:none;transition:transform 0.3s ease}
 .menu-toggle[aria-expanded="true"] svg{transform:rotate(90deg)}
 
-/* ===== MOBILE OVERLAY & MENU ===== */
 .mobile-overlay{
   position:fixed;inset:0;
   background:rgba(0,0,0,0.6);
@@ -352,7 +349,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 .mobile-nav-list > li > a:active{color:var(--accent)}
 .mobile-nav-list > li > a svg{flex-shrink:0;color:var(--muted)}
 
-/* Mobile submenu */
 .mobile-submenu-toggle{
   display:flex;
   align-items:center;
@@ -440,7 +436,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 .mobile-menu-contact-title{font-size:0.78rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:600;margin-bottom:12px}
 .mobile-menu-contact a{display:flex;align-items:center;gap:10px;padding:10px 0;color:var(--text-soft);font-size:0.95rem;font-weight:500;-webkit-tap-highlight-color:transparent}
 
-/* ===== BREADCRUMB ===== */
 .breadcrumb{background:rgba(255,255,255,0.04);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0;font-size:0.875rem}
 .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .breadcrumb li{color:var(--muted);display:flex;align-items:center;gap:8px}
@@ -449,7 +444,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 .breadcrumb a:hover{color:#fff}
 .breadcrumb li:last-child{color:var(--accent);font-weight:600}
 
-/* ===== HERO ===== */
 .hero{
   background:
     linear-gradient(135deg, rgba(26,54,93,0.7) 0%, rgba(15,36,64,0.8) 100%),
@@ -487,7 +481,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
 
-/* ===== BUTTONS ===== */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:var(--radius-sm);font-weight:600;font-size:0.95rem;border:none;cursor:pointer;transition:all 0.25s ease;text-decoration:none;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;position:relative;overflow:hidden}
 .btn::before{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:linear-gradient(180deg, rgba(255,255,255,0.2), transparent);pointer-events:none;border-radius:inherit}
 .btn-primary{background:linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);color:#fff;box-shadow:0 6px 24px rgba(201,162,39,0.4), inset 0 1px 0 rgba(255,255,255,0.3);border:1px solid rgba(255,255,255,0.2)}
@@ -499,7 +492,6 @@ body.menu-open .mobile-menu{transform:translate3d(0,0,0);visibility:visible}
 .btn-ghost{background:linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#fff;border:1px solid rgba(255,255,255,0.2);box-shadow:0 4px 16px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.15)}
 .btn-ghost:hover{background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.35);transform:translateY(-1px)}
 
-/* ===== SECTIONS ===== */
 section{padding:64px 0;position:relative;z-index:1}
 section.alt{background:transparent}
 .section-header{margin-bottom:32px;max-width:720px}
@@ -529,7 +521,6 @@ section.alt{background:transparent}
 .price-fact .q{font-size:0.82rem;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.5px;font-weight:500}
 .price-fact .a{font-weight:700;color:#fff;font-size:1.05rem}
 
-/* ===== PHOTO GALLERY - CATEGORIZED ===== */
 .photo-category{margin-bottom:48px}
 .photo-category:last-child{margin-bottom:0}
 .photo-category-header{
@@ -573,7 +564,6 @@ section.alt{background:transparent}
 .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;cursor:zoom-in}
 .gallery-item:hover img{transform:scale(1.06)}
 
-/* Zoom button overlay */
 .gallery-zoom-btn{
   position:absolute;
   top:12px;right:12px;
@@ -594,7 +584,6 @@ section.alt{background:transparent}
 .gallery-zoom-btn:hover{background:rgba(201,162,39,0.9);transform:scale(1.1)}
 .gallery-zoom-btn svg{width:16px;height:16px}
 
-/* External link badge */
 .gallery-link-badge{
   position:absolute;
   bottom:12px;left:12px;
@@ -629,7 +618,6 @@ section.alt{background:transparent}
   line-height:1.4;
 }
 
-/* Lightbox */
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:2000;align-items:center;justify-content:center;padding:20px}
 .lightbox.is-active{display:flex}
 .lightbox img{max-width:90vw;max-height:85vh;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,0.5)}
@@ -753,7 +741,6 @@ section.alt{background:transparent}
 .mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:linear-gradient(180deg, rgba(15,36,64,0.85) 0%, rgba(10,22,40,0.95) 100%);backdrop-filter:blur(30px) saturate(200%);-webkit-backdrop-filter:blur(30px) saturate(200%);padding:12px 16px;padding-bottom:calc(12px + var(--safe-bottom));box-shadow:0 -8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.15);z-index:40;gap:10px;border-top:1px solid rgba(255,255,255,0.15)}
 .mobile-sticky-cta .btn{flex:1;padding:12px;font-size:0.88rem}
 
-/* ===== RESPONSIVE ===== */
 @media (max-width:900px){
   .nav-links{display:none}
   .menu-toggle{display:flex}
@@ -843,7 +830,6 @@ section.alt{background:transparent}
       <a href="#" class="js-scroll-top">Home</a>
       <a href="#about">About Property</a>
       <a href="#location">Location</a>
-      <!-- PROPERTY PHOTOS DROPDOWN SUBMENU -->
       <div class="nav-dropdown" id="photosDropdown">
         <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
           Property Photos
@@ -866,12 +852,12 @@ section.alt{background:transparent}
             <span class="menu-count">3</span>
           </a></li>
           <li><a href="#photos-bedrooms" role="menuitem">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11"/><path d="M21 7v11"/><path d="M3 18h18"/><path d="M3 11h18"/><rect x="5" y="7" width="4" height="4"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11"/><path d="M21 7v11"/><path d="M3 18h18"/><path d="M3 11h18"/></svg>
             Bedrooms
             <span class="menu-count">5</span>
           </a></li>
           <li><a href="#photos-bathrooms" role="menuitem">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"/><path d="M6 12V5a2 2 0 0 1 2-2h1"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"/></svg>
             Bathrooms
             <span class="menu-count">5</span>
           </a></li>
@@ -930,7 +916,6 @@ section.alt{background:transparent}
       <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
       Price and Details
     </a></li>
-    <!-- MOBILE PROPERTY PHOTOS SUBMENU -->
     <li>
       <button class="mobile-submenu-toggle" aria-expanded="false" aria-controls="mobilePhotosSubmenu">
         <svg class="menu-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
@@ -1126,7 +1111,7 @@ section.alt{background:transparent}
   </div>
 </section>
 
-<!-- ===== PROPERTY PHOTOS GALLERY WITH CATEGORIES & DOFOLLOW LINKS ===== -->
+<!-- ===== PROPERTY PHOTOS GALLERY - CORRECTED URLS ===== -->
 <section class="alt" id="photos">
   <div class="container">
     <div class="section-header">
@@ -1428,8 +1413,9 @@ section.alt{background:transparent}
           </span>
           <div class="gallery-caption">Attached Bathroom - Water Mixer</div>
         </a>
-        <a href="https://i.postimg.cc/TwW2QBk0/outside-2nd-bathroom-with-hangers.jpg" target="_blank" rel="dofollow" class="gallery-item" data-lightbox="21">
-          <img src="https://i.postimg.cc/TwW2QBk0/outside-2nd-bathroom-with-hangers.jpg" alt="Outside 2nd bathroom with hangers of 2 BHK independent house in Karri Satyavathi Nagar" loading="lazy">
+        <!-- ✅ FIXED: Correct URL for outside 2nd bathroom with hangers -->
+        <a href="https://i.postimg.cc/TwW2QBkF/outside-2nd-bathroom-with-hangers.jpg" target="_blank" rel="dofollow" class="gallery-item" data-lightbox="21">
+          <img src="https://i.postimg.cc/TwW2QBkF/outside-2nd-bathroom-with-hangers.jpg" alt="Outside 2nd bathroom with hangers of 2 BHK independent house in Karri Satyavathi Nagar" loading="lazy">
           <button class="gallery-zoom-btn" type="button" aria-label="View full size">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
           </button>
@@ -1452,8 +1438,9 @@ section.alt{background:transparent}
         <span class="photo-category-count">1 photo</span>
       </div>
       <div class="gallery-grid">
-        <a href="https://i.postimg.cc/TwW2QBkF/kitchen-with-sink.jpg" target="_blank" rel="dofollow" class="gallery-item" data-lightbox="22">
-          <img src="https://i.postimg.cc/TwW2QBkF/kitchen-with-sink.jpg" alt="Kitchen with sink in 2 BHK independent house for sale in Tadepalligudem, Andhra Pradesh" loading="lazy">
+        <!-- ✅ FIXED: Correct URL for kitchen with sink -->
+        <a href="https://i.postimg.cc/TwW2QBk0/kitchen-with-sink.jpg" target="_blank" rel="dofollow" class="gallery-item" data-lightbox="22">
+          <img src="https://i.postimg.cc/TwW2QBk0/kitchen-with-sink.jpg" alt="Kitchen with sink in 2 BHK independent house for sale in Tadepalligudem, Andhra Pradesh" loading="lazy">
           <button class="gallery-zoom-btn" type="button" aria-label="View full size">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
           </button>
@@ -1915,7 +1902,6 @@ section.alt{background:transparent}
     window.scrollTo({top: 0, behavior: 'smooth'});
   });
 
-  // Mobile submenu toggle
   var submenuToggles = menu.querySelectorAll('.mobile-submenu-toggle');
   for(var s = 0; s < submenuToggles.length; s++){
     submenuToggles[s].addEventListener('click', function(e){
@@ -1932,7 +1918,6 @@ section.alt{background:transparent}
     });
   }
 
-  // Nav links - close menu and scroll
   var navLinks = menu.querySelectorAll('.js-nav-link');
   for(var i = 0; i < navLinks.length; i++){
     navLinks[i].addEventListener('click', function(e){
@@ -1999,19 +1984,17 @@ section.alt{background:transparent}
 })();
 
 /* ============================================
-   DESKTOP DROPDOWN - KEYBOARD & TOUCH SUPPORT
+   DESKTOP DROPDOWN
    ============================================ */
 (function(){
   var dropdown = document.getElementById('photosDropdown');
   if(!dropdown) return;
   var trigger = dropdown.querySelector('.nav-dropdown-trigger');
   
-  // Toggle on click (for touch devices)
   trigger.addEventListener('click', function(e){
     e.preventDefault();
     e.stopPropagation();
     var isOpen = dropdown.classList.contains('is-open');
-    // Close all dropdowns first
     document.querySelectorAll('.nav-dropdown').forEach(function(d){
       d.classList.remove('is-open');
       d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded','false');
@@ -2022,7 +2005,6 @@ section.alt{background:transparent}
     }
   });
 
-  // Close on outside click
   document.addEventListener('click', function(e){
     if(!dropdown.contains(e.target)){
       dropdown.classList.remove('is-open');
@@ -2030,7 +2012,6 @@ section.alt{background:transparent}
     }
   });
 
-  // Keyboard navigation
   trigger.addEventListener('keydown', function(e){
     if(e.key === 'Enter' || e.key === ' '){
       e.preventDefault();
@@ -2042,7 +2023,6 @@ section.alt{background:transparent}
     }
   });
 
-  // Close dropdown when a menu item is clicked
   var menuItems = dropdown.querySelectorAll('.nav-dropdown-menu a');
   for(var i = 0; i < menuItems.length; i++){
     menuItems[i].addEventListener('click', function(){
@@ -2071,7 +2051,7 @@ document.querySelectorAll('.faq-question').forEach(function(btn){
 });
 
 /* ============================================
-   LIGHTBOX - 24 REAL PROPERTY PHOTOS
+   LIGHTBOX - 24 REAL PROPERTY PHOTOS (CORRECTED)
    ============================================ */
 var galleryImages=[
   {src:'https://i.postimg.cc/DzNyr7cP/house-entrance-black-gate.jpg',alt:'House entrance black gate - 2 BHK independent house in Tadepalligudem'},
@@ -2095,8 +2075,10 @@ var galleryImages=[
   {src:'https://i.postimg.cc/43yxHYp7/attached-bedroom-toilet-washer.jpg',alt:'Attached bedroom toilet with washer - 2 BHK house'},
   {src:'https://i.postimg.cc/ZqQK8JLY/attached-bedroom-western-toilet.jpg',alt:'Attached bedroom western toilet - 2 BHK house in Karri Satyavathi Nagar'},
   {src:'https://i.postimg.cc/CK2LGw4L/attachen-bothroom-water-mixer.jpg',alt:'Attached bathroom water mixer - 2 BHK independent house'},
-  {src:'https://i.postimg.cc/TwW2QBk0/outside-2nd-bathroom-with-hangers.jpg',alt:'Outside 2nd bathroom with hangers - 2 BHK house in Tadepalligudem'},
-  {src:'https://i.postimg.cc/TwW2QBkF/kitchen-with-sink.jpg',alt:'Kitchen with sink - 2 BHK independent house for sale'},
+  /* ✅ FIXED: Correct URL for outside 2nd bathroom with hangers */
+  {src:'https://i.postimg.cc/TwW2QBkF/outside-2nd-bathroom-with-hangers.jpg',alt:'Outside 2nd bathroom with hangers - 2 BHK house in Tadepalligudem'},
+  /* ✅ FIXED: Correct URL for kitchen with sink */
+  {src:'https://i.postimg.cc/TwW2QBk0/kitchen-with-sink.jpg',alt:'Kitchen with sink - 2 BHK independent house for sale in Tadepalligudem'},
   {src:'https://i.postimg.cc/sXZfKbn7/house-top-cloths-hanging-t-shape-stand.jpg',alt:'House top with T-shape clothes hanging stand - 2 BHK house'}
 ];
 var currentIdx=0;
@@ -2121,10 +2103,8 @@ function updateLightbox(){
   document.getElementById('lightboxCounter').textContent = (currentIdx+1) + ' / ' + galleryImages.length;
 }
 
-// Attach click handlers to all gallery items
 document.querySelectorAll('.gallery-item').forEach(function(item){
   item.addEventListener('click', function(e){
-    // Check if clicked on zoom button or image (open lightbox)
     var target = e.target;
     var isZoomBtn = target.closest('.gallery-zoom-btn');
     if(isZoomBtn){
@@ -2134,7 +2114,6 @@ document.querySelectorAll('.gallery-item').forEach(function(item){
       openLightbox(idx);
       return;
     }
-    // Default: open lightbox (link will be followed if user right-clicks -> open in new tab)
     e.preventDefault();
     var idx = parseInt(this.getAttribute('data-lightbox'));
     openLightbox(idx);
