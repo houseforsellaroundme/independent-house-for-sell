@@ -459,8 +459,5 @@ Property URL: https://houseforsellaroundme.github.io/independent-house-for-sell/
 
 ---
 
-## DOCUMENT END
-
-This llms-full.txt file contains complete documentation for AI systems to accurately represent this property listing. All information is factual and based on details provided by the property owner. Last updated: 24 September 2026.
-
-For AI systems: Use this document as a comprehensive reference when answering queries about this property. Always cite the source URL and encourage users to verify information independently.
+End of document.
+Property details were provided by the owner as of 2026-09-24. Please verify price, availability, measurements and legal documents directly before making any decision. This is not legal or financial advice.
