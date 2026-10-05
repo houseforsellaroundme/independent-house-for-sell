@@ -1,157 +1,60 @@
-
 User-agent: *
-Allow: /independent-house-for-sell/
-Allow: /independent-house-for-sell/index.html
-Allow: /independent-house-for-sell/*.css
-Allow: /independent-house-for-sell/*.js
-Allow: /independent-house-for-sell/*.png
-Allow: /independent-house-for-sell/*.jpg
-Allow: /independent-house-for-sell/*.jpeg
-Allow: /independent-house-for-sell/*.webp
-Allow: /independent-house-for-sell/*.svg
-Allow: /independent-house-for-sell/*.gif
-Allow: /independent-house-for-sell/robots.txt
-Allow: /independent-house-for-sell/sitemap.xml
-
-Disallow: /independent-house-for-sell/*.json$
-Disallow: /independent-house-for-sell/drafts/
-Disallow: /independent-house-for-sell/temp/
-Disallow: /independent-house-for-sell/test/
-Disallow: /independent-house-for-sell/backup/
-
-Block tracking parameters to prevent duplicate content
-Disallow: /?utm_source=
-Disallow: /?utm_medium=
-Disallow: /?utm_campaign=
-Disallow: /?fbclid=
-Disallow: /?gclid=
-Disallow: /?ref=
-Disallow: /?session=
-
-
-Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/sitemap.xml
+Allow: /llms.txt
+Allow: /
 
 User-agent: Googlebot
-Allow: /independent-house-for-sell/
-Allow: /*.css
-Allow: /*.js
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.webp
-Allow: /*.svg
-Allow: /*.gif
-
-User-agent: Googlebot-Image
-Allow: /independent-house-for-sell/
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.webp
-Allow: /*.gif
-Allow: /*.svg
-
-User-agent: Googlebot-Video
-Allow: /independent-house-for-sell/
-
-User-agent: Googlebot-News
-Allow: /independent-house-for-sell/
-
-User-agent: Google-Extended
-Allow: /independent-house-for-sell/
-
-BING (Search + Images)
+Allow: /
 
 User-agent: Bingbot
-Allow: /independent-house-for-sell/
-Allow: /*.css
-Allow: /*.js
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.webp
-Crawl-delay: 1
-
-User-agent: msnbot
-Allow: /independent-house-for-sell/
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.webp
-
-User-agent: YandexBot
-Allow: /independent-house-for-sell/
-Crawl-delay: 2
+Allow: /
 
 User-agent: DuckDuckBot
-Allow: /independent-house-for-sell/
+Allow: /
 
-User-agent: DuckDuckGo-Favicons-Bot
-Allow: /independent-house-for-sell/
+User-agent: Yandex
+Allow: /
 
-
-User-agent: Baiduspider
-Allow: /independent-house-for-sell/
-Crawl-delay: 2
-
-OpenAI ChatGPT Search
-User-agent: GPTBot
-Allow: /independent-house-for-sell/
-
-OpenAI User (ChatGPT browsing)
-User-agent: ChatGPT-User
-Allow: /independent-house-for-sell/
-
-Google Gemini / Bard
 User-agent: Google-Extended
-Allow: /independent-house-for-sell/
+Allow: /
 
-Anthropic Claude
-User-agent: ClaudeBot
-Allow: /independent-house-for-sell/
+User-agent: GoogleOther
+Allow: /
 
-User-agent: Claude-Web
-Allow: /independent-house-for-sell/
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
 
 User-agent: PerplexityBot
-Allow: /independent-house-for-sell/
+Allow: /
+
 User-agent: Perplexity-User
-Allow: /independent-house-for-sell/
+Allow: /
 
-User-agent: cohere-ai
-Allow: /independent-house-for-sell/
+User-agent: ClaudeBot
+Allow: /
 
-Apple Intelligence (Siri)
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
 User-agent: Applebot
-Allow: /independent-house-for-sell/
+Allow: /
 
-Apple AI Extended
 User-agent: Applebot-Extended
-Allow: /independent-house-for-sell/
+Allow: /
 
-Meta AI (Facebook/Instagram)
-User-agent: FacebookBot
-Allow: /independent-house-for-sell/
-
-Common Crawl (AI training datasets)
-User-agent: CCbot
-Allow: /independent-house-for-sell/
-
-Bytespider (TikTok AI)
-User-agent: Bytespider
-Allow: /independent-house-for-sell/
-
-You.com AI
-User-agent: YouBot
-Allow: /independent-house-for-sell/
-
-Diffbot
-User-agent: Diffbot
-Allow: /independent-house-for-sell/
-
-Omgilibot
-User-agent: Omgilibot
-Allow: /independent-house-for-sell/
+User-agent: Amazonbot
+Allow: /
 
 User-agent: AhrefsBot
 Disallow: /
@@ -159,82 +62,15 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
-User-agent: SemrushBot-SA
+User-agent: MJ12bot
 Disallow: /
 
 User-agent: DotBot
 Disallow: /
 
-User-agent: MJ12bot
+User-agent: AdsBot
 Disallow: /
 
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: PetalBot
-Disallow: /
-
-User-agent: ZoominfoBot
-Disallow: /
-
-User-agent: MegaIndex.ru
-Disallow: /
-
-User-agent: Seekport
-Disallow: /
-
-User-agent: DataForSeoBot
-Disallow: /
-
-User-agent: linkdexbot
-Disallow: /
-
-User-agent: magpie-crawler
-Disallow: /
-
-BLOCK MALICIOUS BOTS & SCRAPERS
-
-User-agent: SiteLockSpider
-Disallow: /
-
-User-agent: TurnitinBot
-Disallow: /
-
-User-agent: aiHitBot
-Disallow: /
-
-User-agent: spbot
-Disallow: /
-
-User-agent: rogerbot
-Disallow: /
-
-User-agent: opensiteexplorer
-Disallow: /
-
-User-agent: Nutch
-Disallow: /
-
-User-agent: HTTrack
-Disallow: /
-
-User-agent: WebZIP
-Disallow: /
-
-User-agent: TeleportPro
-Disallow: /
-
-User-agent: EmailCollector
-Disallow: /
-
-User-agent: EmailSiphon
-Disallow: /
-
-User-agent: EmailWolf
-Disallow: /
-
-User-agent: ExtractorPro
-Disallow: /
-
-User-agent: ContactBot
-Disallow: /
+Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/sitemap.xml
+Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/sitemap.rss
+Sitemap: https://houseforsellaroundme.github.io/independent-house-for-sell/feed.xml
