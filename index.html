@@ -427,6 +427,19 @@ section.alt{background:transparent}
 .resource-category-title{color:var(--accent);font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin:24px 0 12px;padding-bottom:8px;border-bottom:1px solid rgba(201,162,39,0.2);grid-column:1/-1}
 .resource-category-title:first-child{margin-top:0}
 
+.footer-featured-article{background:linear-gradient(135deg, rgba(201,162,39,0.12) 0%, rgba(212,176,58,0.05) 100%);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(201,162,39,0.25);border-radius:var(--radius);padding:20px;margin-top:16px;box-shadow:0 6px 20px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.15);transition:all 0.25s ease;display:block;text-decoration:none}
+.footer-featured-article:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 10px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.2);background:linear-gradient(135deg, rgba(201,162,39,0.18) 0%, rgba(212,176,58,0.08) 100%)}
+.footer-featured-article .article-label{display:inline-flex;align-items:center;gap:6px;font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:8px}
+.footer-featured-article .article-label svg{width:12px;height:12px}
+.footer-featured-article .article-title{color:#fff;font-size:0.95rem;font-weight:600;line-height:1.4;margin-bottom:8px;display:block}
+.footer-featured-article .article-title:hover{color:var(--accent-hover)}
+.footer-featured-article .article-meta{display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--muted)}
+.footer-featured-article .article-meta svg{width:12px;height:12px;flex-shrink:0}
+.footer-featured-article .read-more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:var(--accent);font-size:0.82rem;font-weight:600}
+.footer-featured-article .read-more:hover{color:var(--accent-hover)}
+.footer-featured-article .read-more svg{width:12px;height:12px;transition:transform 0.2s}
+.footer-featured-article:hover .read-more svg{transform:translateX(3px)}
+
 .form-container{background:linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);backdrop-filter:blur(30px) saturate(200%);-webkit-backdrop-filter:blur(30px) saturate(200%);padding:40px;border-radius:var(--radius-lg);box-shadow:0 12px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.2);max-width:640px;margin:0 auto;border:1px solid rgba(255,255,255,0.18);position:relative;overflow:hidden}
 .form-group{margin-bottom:20px;position:relative}
 .form-group label{display:block;font-weight:600;margin-bottom:8px;color:#fff;font-size:0.9rem}
@@ -476,21 +489,6 @@ section.alt{background:transparent}
 .footer-col a{color:#cbd5e1;display:block;padding:5px 0;font-size:0.9rem}
 .footer-col a:hover{color:var(--accent)}
 .footer-col p{color:#94a3b8;line-height:1.7;font-size:0.88rem}
-
-/* Featured Article Card in Footer */
-.footer-featured-article{background:linear-gradient(135deg, rgba(201,162,39,0.12) 0%, rgba(212,176,58,0.05) 100%);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(201,162,39,0.25);border-radius:var(--radius);padding:20px;margin-top:16px;box-shadow:0 6px 20px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.15);transition:all 0.25s ease;display:block;text-decoration:none}
-.footer-featured-article:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 10px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.2);background:linear-gradient(135deg, rgba(201,162,39,0.18) 0%, rgba(212,176,58,0.08) 100%)}
-.footer-featured-article .article-label{display:inline-flex;align-items:center;gap:6px;font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:8px}
-.footer-featured-article .article-label svg{width:12px;height:12px}
-.footer-featured-article .article-title{color:#fff;font-size:0.95rem;font-weight:600;line-height:1.4;margin-bottom:8px;display:block}
-.footer-featured-article .article-title:hover{color:var(--accent-hover)}
-.footer-featured-article .article-meta{display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--muted)}
-.footer-featured-article .article-meta svg{width:12px;height:12px;flex-shrink:0}
-.footer-featured-article .read-more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:var(--accent);font-size:0.82rem;font-weight:600}
-.footer-featured-article .read-more:hover{color:var(--accent-hover)}
-.footer-featured-article .read-more svg{width:12px;height:12px;transition:transform 0.2s}
-.footer-featured-article:hover .read-more svg{transform:translateX(3px)}
-
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;text-align:center;font-size:0.85rem;color:#94a3b8}
 
 .mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:linear-gradient(180deg, rgba(15,36,64,0.85) 0%, rgba(10,22,40,0.95) 100%);backdrop-filter:blur(30px) saturate(200%);-webkit-backdrop-filter:blur(30px) saturate(200%);padding:12px 16px;padding-bottom:calc(12px + var(--safe-bottom));box-shadow:0 -8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.15);z-index:40;gap:10px;border-top:1px solid rgba(255,255,255,0.15)}
@@ -880,7 +878,7 @@ Property Photos
 </ul>
 <p style="margin-top:20px;color:var(--muted);font-size:0.9rem">The map shows the approximate area. Exact location will be shared with genuine buyers during a scheduled visit.</p>
 <div class="location-links">
-<a href="https://maps.app.goo.gl/ryf4UydGrorrKkyH6" target="_blank" rel="noopener"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>View on Google Maps</a>
+<a href="https://maps.app.goo.gl/kZ76nZHMnk8rRNWC7" target="_blank" rel="noopener"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>View on Google Maps</a>
 <a href="https://en.wikipedia.org/wiki/Tadepalligudem" target="_blank"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>About Tadepalligudem</a>
 <a href="https://www.incredibleindia.gov.in/en/andhra-pradesh" target="_blank"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Andhra Pradesh – Incredible India</a>
 </div>
@@ -1027,7 +1025,7 @@ Property Photos
 </div>
 <div class="resource-category-title">Maps & Local Information</div>
 <div class="resource-grid">
-<a href="https://maps.app.goo.gl/ryf4UydGrorrKkyH6" target="_blank" rel="noopener" class="resource-card">
+<a href="https://maps.app.goo.gl/kZ76nZHMnk8rRNWC7" target="_blank" rel="noopener" class="resource-card">
 <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Google Maps – Tadepalligudem Area</h4>
 <p>View the approximate location of this property on Google Maps. Explore the surrounding neighbourhood, nearby amenities, and connectivity options.</p>
 <span class="resource-link">Open in Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
@@ -1305,7 +1303,7 @@ Property Photos
 <a href="https://en.wikipedia.org/wiki/Tadepalligudem" target="_blank">About Tadepalligudem</a>
 <a href="https://en.wikipedia.org/wiki/West_Godavari_district" target="_blank">West Godavari District</a>
 <a href="https://www.incredibleindia.gov.in/en/andhra-pradesh" target="_blank">Andhra Pradesh Tourism</a>
-<a href="https://maps.app.goo.gl/ryf4UydGrorrKkyH6" target="_blank" rel="noopener">View on Google Maps</a>
+<a href="https://maps.app.goo.gl/kZ76nZHMnk8rRNWC7" target="_blank" rel="noopener">View on Google Maps</a>
 <a href="https://www.youtube.com/watch?v=1gYdqDss2_4" target="_blank" rel="noopener">Watch Video</a>
 <a href="https://www.thehindu.com/news/national/andhra-pradesh/pre-feasibility-study-fortadepalligudem-airport-launched/article71011167.ece" target="_blank">Airport News – The Hindu</a>
 <a href="https://medium.com/@houseforsellaroundme/what-32-lakh-buys-you-in-tadepalligudem-a-2-bhk-independent-house-walkthrough-4c91aeb76e5d" target="_blank">Property Walkthrough on Medium</a>
@@ -1701,6 +1699,3 @@ document.head.appendChild(styleSheet);
 </script>
 </body>
 </html>
-<a href="https://medium.com/@houseforsellaroundme/what-32-lakh-buys-you-in-tadepalligudem-a-2-bhk-independent-house-walkthrough-4c91aeb76e5d" 
-   target="_blank" 
-   class="footer-featured-article">
